@@ -1,0 +1,132 @@
+.menu-bar{
+    background:black;
+    width: 100%;
+    text-align: center;
+    opacity: 80%;
+
+}
+.menu-bar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+
+}
+.menu-bar ul li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    width: 120px;
+    font-weight: bold;
+}
+.menu-bar ul li a:hover{
+    background:#04AA6D;
+}
+.menu-bar ul ul{
+    display: none;
+    background: black;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    position: absolute;
+}
+.menu-bar ul li{
+    float: left;
+    list-style: none;
+}
+.menu-bar ul::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.menu-bar ul li:hover > ul{
+    display: block;
+}
+.menu-bar ul li:hover{
+    background: black;
+    transition: 0.8s;
+}
+.menu-bar ul li:hover a{
+    color: white;
+
+}
+.menu-bar ul ul li{
+    float: none;
+    position: relative;
+}
+.menu-bar ul ul li a{
+    padding: 25px;
+    color: white;
+    width: 300px;
+    text-align: left;
+}
+.menu-bar ul ul li a:hover{
+    background:#04AA6D;
+    color: white;
+    transition: 0.8s;
+}
+
+.logo img{
+    width: 58px;
+}
+
+/*Donation page*/
+input[type=text], select {
+	width:100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  div {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+
+/*Footer*/
+.column {
+	float: left;
+	width: 25%;
+  }
+  .row{
+	padding-right: 8px;
+	padding-left: 10px;
+  }
+  .linker a:hover{
+	background: #04AA6D;
+	color: white;
+  }
+  .linker a:visited{
+	color: white;
+	background: #04AA6D;
+  }
+  .footer {
+	position:absolute;
+	height: 170px;
+	left: 0px;
+	bottom: 0;
+	width: 100%;
+	background-color:rgb(34, 39, 39);
+	color: white;
+	text-align:inherit;
+  }

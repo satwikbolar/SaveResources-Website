@@ -1,0 +1,361 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<title> Login Page </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<style>
+/*.menu-bar{
+    background:black;
+    width: 100%;
+    text-align: center;
+    opacity: 90%;
+
+}
+.menu-bar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+
+}
+.menu-bar ul li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    width: 120px;
+    font-weight: bold;
+}
+.menu-bar ul li a:hover{
+    background:#04AA6D;
+}
+.menu-bar ul ul{
+    display: none;
+    background: black;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    position: absolute;
+}
+.menu-bar ul li{
+    float: left;
+    list-style: none;
+}
+.menu-bar ul::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.menu-bar ul li:hover > ul{
+    display: block;
+}
+.menu-bar ul li:hover{
+    background: black;
+    transition: 0.8s;
+}
+.menu-bar ul li:hover a{
+    color: white;
+
+}
+.menu-bar ul ul li{
+    float: none;
+    position: relative;
+}
+.menu-bar ul ul li a{
+    padding: 25px;
+    color: white;
+    width: 300px;
+    text-align: left;
+}
+.menu-bar ul ul li a:hover{
+    background:#04AA6D;
+    color: white;
+    transition: 0.8s;
+}
+
+.logo img{
+    width: 58px;
+}*/
+
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  opacity: 70%;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color:#04AA6D;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color:#04AA6D;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+/*Login Form*/  
+button {   
+       background-color:#04AA6D;   
+       width: 100%;  
+        color: rgb(247, 246, 244);   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid #04AA6D;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 15px;   
+        background-color:lightskyblue;  
+    } 
+.container a:link, a:visited {
+  
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+/*Footer*/
+.column {
+  float: left;
+  width: 25%;
+}
+.row{
+  padding-right: 8px;
+  padding-left: 10px;
+}
+.linker a:hover{
+  background: #04AA6D;
+  color: white;
+}
+.linker a:visited{
+  color: white;
+  background: #04AA6D;
+}
+.footer {
+  position:relative;
+  height: 170px;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(34, 39, 39);
+  color: white;
+  text-align:inherit;
+}
+
+
+</style>   
+</head>    
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="homepage.html" class="active">Home</a>
+    <a href="aboutus.html">About</a>
+    <a href="login.html">Login</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="donation.html">Donation</a>
+        <a href="welfare.html">Works on Development</a>
+      </div>
+    </div> 
+    <a href="contactus.html">Contact Us</a>
+    <a href="signup.html">Signup</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+    <center> <h2 style="color:#04AA6D;">Login here! </h2> </center>   
+    <form action="login.php" method="post">  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" id="email">  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" id="pwd1"> 
+            <button type="submit" value="Log In" onClick="login()">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn" id="cancel"><a href="homepage.html">Cancel</a></button> 
+            <a href="#"> Forgot password? </a>
+       
+        </div> 
+          
+    </form>
+    <br>
+    
+    <div class="footer">
+        <div class="row">
+          <div class="column">
+            <h4>Services</h4>
+            <div class="linker"><a href="#">Voluntary Works</a></div>
+            <div class="linker"><a href="donation.html">Donations</a></div>
+            <div class="linker"><a href="welfare.html">Works on Development</a></div>
+          </div>
+          <div class="column">
+            <h4>About</h4>
+            <div class="linker"><a href="#">Company</a></div>
+            <div class="linker"><a href="#">Team</a></div>
+            <div class="linker"><a href="#">Partners</a></div>
+          </div>
+          <div class="column">
+            <h4>Follow Us @:</h4>
+            <div class="linker"><a href="#">Instagram</a></div>
+            <div class="linker"><a href="#">Facebook</a></div>
+            <div class="linker"><a href="#">Twitter</a></div>
+          </div>
+          <div class="column">
+            <h4>Save Our Resources</h4>
+            <p>Our website is designed to create awarness and help saving it. Hope you make the earth a better place.</p>
+          </div>
+          
+        </div>
+    </div>
+
+<script language="javascript">
+  
+  function login()
+  {
+    var uname = document.getElementById("email").value;
+    var pwd = document.getElementById("pwd1").value;
+    
+    if(uname =='')
+    {
+      alert("Enter valid User id.");
+    }
+    else if(pwd=='')
+    {
+          alert("enter the password");
+    }
+      
+    else if(pwd.length < 8 || pwd.length > 8)
+    {
+      alert("Password min and max length is 8.");
+    }
+   
+  }
+</script>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script> 
+     
+</body>     
+</html>  

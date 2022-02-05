@@ -1,2 +1,2 @@
 # SaveResources-Website-SQLdb
-Web development project.
+Web development project using HTML, CSS, JavaScript, PHP and SQL DBMS

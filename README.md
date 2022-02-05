@@ -1,2 +1,2 @@
-# SaveResources-Website-using-HTML-CSS-JS-PHP-SQLdb
+# SaveResources-Website-SQLdb
 Web development project.
